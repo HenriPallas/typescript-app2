@@ -16,8 +16,7 @@ const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="/form" element={<MyForm />} />
-      <Route path="/extra" element={<h1>Extra</h1>} />
-      <Route path="/contact" element={<h1>Contact</h1>} />
+      <Route path="/aboutme" element={<h1>Extra</h1>} />
     </Route>
   )
 );
