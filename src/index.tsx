@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
+import { Navigate } from "react-router-dom";
 
 import {
   createHashRouter,
@@ -12,10 +13,12 @@ import {
 import App from "./App";
 import MyForm from "./components/Login";
 import Me from "./components/Me";
+import Home from "./components/Home";
 
 const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
+      <Route index element={<Home />} />
       <Route path="/form" element={<MyForm />} />
       <Route path="/aboutme" element={<Me />} />
     </Route>
