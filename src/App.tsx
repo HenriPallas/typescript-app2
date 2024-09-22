@@ -8,7 +8,7 @@ import { Stack } from "@mui/material"
 function App() {
   return (
     <>
-      <Stack spacing={20}>
+      <Stack spacing={5}>
         <HeaderBar />
         <Outlet />
       </Stack>

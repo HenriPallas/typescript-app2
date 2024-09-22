@@ -11,12 +11,13 @@ import {
 } from "react-router-dom";
 import App from "./App";
 import MyForm from "./components/Login";
+import Me from "./components/Me";
 
 const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="/form" element={<MyForm />} />
-      <Route path="/aboutme" element={<h1>Extra</h1>} />
+      <Route path="/aboutme" element={<Me />} />
     </Route>
   )
 );
